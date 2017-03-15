@@ -1,0 +1,50 @@
+<div class="panel">
+  <div class="panel-header">
+    <div class="panel-header">
+      <h4 class="title">{{title}}</h4>
+    </div>
+  </div>
+  <div class="panel-container">
+    <form method="post" action="{{formAction}}">
+      <div class="row">
+        <div class="six columns">
+          <label for="emailInput">Email address
+            <input class="u-full-width" type="email" placeholder="We will send your login details to this address" id="emailInput" name="email" value="{{user.email}}" required="true">
+          </label>
+        </div>
+        <div class="six columns">
+          <label for="phoneNumberInput">Phone number
+            <input class="u-full-width" type="tel" id="phoneNumberInput" name="phone" value="{{user.phone}}" required="true">
+          </label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="six columns">
+          <label for="firstNameInput">First name
+            <input class="u-full-width" type="text" id="firstNameInput" name="firstName" value="{{user.firstName}}" required="true">
+          </label>
+        </div>
+        <div class="six columns">
+          <label for="lastNameInput">Last name
+            <input class="u-full-width" type="text" id="lastNameInput" name="lastName" value="{{user.lastName}}" required="true">
+          </label>
+        </div>
+      </div>
+      {{#if createForm}}
+      <label for="usernameInput">Username
+        <input class="u-full-width" type="text" placeholder="Your PIE username (this can be changed later)" id="usernameInput" name="username" value="{{user.username}}">
+      </label>
+      <label for="exampleRecipientInput">Role
+        <select class="u-full-width" id="exampleRecipientInput" name="role">
+          <option value="Administrator">Administrator</option>
+          <option value="Editor">Editor</option>
+          <option value="Viewer">Viewer</option>
+        </select>
+      </label>
+      {{/if}}
+      <p>I agree to the <a href="#">PIE Terms</a> and <a href="#">Privacy</a>.</p>
+      <a class="button" href="/user/list">Cancel</a>
+      <input class="button-primary" type="submit" value="Submit">
+    </form>
+  </div>
+</div>

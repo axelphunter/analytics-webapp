@@ -1,0 +1,67 @@
+<div class="panel">
+  <div class="panel-header">
+    <div class="panel-header">
+      <h4 class="title">{{title}}</h4>
+    </div>
+  </div>
+  <div class="panel-container">
+    <form method="post" action="{{formAction}}">
+        <label for="tenantNameInput">Tenant Name
+          <input class="u-full-width" type="text" id="tenantNameInput" name="name" value="{{tenant.name}}" required="true">
+        </label>
+        <input type="hidden" name="tenantCode" value="{{tenant.tenantCode}}" required="true">
+        <h3>Tenant Subscription</h3>
+        <label for="tenantNameInput">Date From
+          <input class="u-full-width datepicker" type="text" id="{{this}}DateFrom" name="{{../feature}}-{{this}}" required="true">
+        </label>
+        <label for="tenantNameInput">Date To
+          <input class="u-full-width datepicker" type="text" id="{{this}}DateTo" name="{{../feature}}-{{this}}" required="true">
+        </label>
+        <h3>Features</h3>
+        {{#each quotas}}
+        <h4>{{feature}}</h4>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <td>
+                Quota name
+              </td>
+              <td>
+                Quota allowance
+              </td>
+            </tr>
+          </thead>
+          <tbody>
+            {{#each quotas}}
+            <tr>
+              <td>
+                {{this}}
+              </td>
+              <td>
+                <label for="tenantNameInput">{{this}}
+                  <input class="u-full-width" type="text" id="{{this}}Value" name="{{../feature}}-{{this}}" required="true">
+                </label>
+              </td>
+            </tr>
+            {{/each}}
+          </tbody>
+        </table>
+        {{/each}}
+        <h3>Sites</h3>
+        <!-- {
+         "id": "756716f7-2e54-4715-9f00-91dcbea6cf31",
+         "tenant": "MAN1",
+         "description": "Manchester Office",
+         "addressLine1": "72 Bridge Street",
+         "city": "Manchester",
+         "county": "Greater Manchester",
+         "postcode": "M3 2RJ",
+         "country": "United Kingdom",
+         "latitude": 53.481069,
+         "longitude": -2.248537
+       }, -->
+      <a class="button" href="/tenant/list">Cancel</a>
+      <input class="button-primary" type="submit" value="Submit">
+    </form>
+  </div>
+</div>

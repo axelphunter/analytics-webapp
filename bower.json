@@ -1,0 +1,40 @@
+{
+  "name": "pie-mt",
+  "version": "0.0.1",
+  "description": "Predictive Intelligence Engine Middle Tier",
+  "main": "server/server.js",
+  "authors": [
+    "Diego Senas"
+  ],
+  "license": "ISC",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "skeleton": "^2.0.4",
+    "hammerjs": "^2.0.8",
+    "animate.css": "^3.5.2",
+    "wow": "^1.1.2",
+    "babel-standalone": "^6.14.0",
+    "gridstack": "^0.2.6",
+    "PACE": "pace#^1.0.2",
+    "pikaday": "^1.5.1",
+    "moment": "^2.17.0",
+    "jquery": "^3.1.1",
+    "topojson": "^2.2.0",
+    "d3": "^4.4.0",
+    "planetary.js": "^1.1.2",
+    "particleground": "*",
+    "threejs": "*",
+    "fs": "^1.0.1"
+  },
+  "resolutions": {
+    "topojson": "^2.2.0",
+    "d3": "^4.4.0"
+  }
+}

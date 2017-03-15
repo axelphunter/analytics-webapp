@@ -1,0 +1,36 @@
+<a class="button button-primary" href="/tenant/create">Add new</a>
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>
+            Code
+          </th>
+          <th>
+            Name
+          </th>
+          <th>
+            Created At
+          </th>
+          <th class="buttons"></th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each tenants}}
+        <tr>
+          <td>
+            {{tenantCode}}
+          </td>
+          <td>
+            {{name}}
+          </td>
+          <td>
+            {{format tenantSinceUtc}}
+          </td>
+          <td>
+            <a class="button" href="/tenant/{{tenantCode}}">View</a>
+            <a class="button error" href="/tenant/delete/{{id}}/{{tenantCode}}">Delete</a>
+          </td>
+        </tr>
+        {{/each}}
+      </tbody>
+    </table>

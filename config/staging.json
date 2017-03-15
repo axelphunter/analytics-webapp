@@ -1,0 +1,9 @@
+{
+  "debug": false,
+  "mode": "staging",
+  "mongo": {
+    "db": "mongodb://<IPAddress>/pie-mt"
+  },
+  "rootPath": "/dist",
+  "port": 80
+}

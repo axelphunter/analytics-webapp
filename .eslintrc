@@ -1,0 +1,23 @@
+{
+  "extends": "airbnb",
+  "env": {
+    "es6": true,
+    "mocha": true,
+    "node": true,
+    "browser": true
+  },
+  "rules": {
+    "comma-dangle": ["error", "never"]
+  },
+  "globals": {
+    "WOW": 1,
+    "helpers": 1,
+    "promise": 1,
+    "Hammer":1,
+    'd3': 1,
+    '$': 1,
+    'topojson': 1,
+    'planetaryjs': 1,
+    'charts': 1
+  }
+}

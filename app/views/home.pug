@@ -1,0 +1,12 @@
+doctype html
+html(lang="en")
+  include partials/head.pug
+  body.dashboard
+    include partials/notificationBar.pug
+    include partials/nav.pug
+    main.page-container
+      include partials/header.pug
+      pie-app(data-view=pageId)
+      script#layoutManager #{layout}
+      include partials/footer.pug
+    include partials/scripts.pug

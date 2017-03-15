@@ -1,0 +1,20 @@
+pie-layout {
+  .remove-widget {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    padding: 0;
+    background: none;
+    border: none;
+    font-size: 18px;
+  }
+
+  .ui-draggable.ui-draggable-handle {
+    cursor: move;
+
+    .remove-widget {
+      display: block;
+    }
+  }
+}

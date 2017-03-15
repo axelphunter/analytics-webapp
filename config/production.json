@@ -1,0 +1,15 @@
+{
+  "debug": false,
+  "mode": "production",
+  "mongo": {
+    "db": "mongodb://<IPAddress>/pie-mt"
+  },
+  "rootPath": "/dist",
+  "port": 80,
+  "identityServiceApi": {
+      "host": "127.0.0.1"
+  },
+  "identityServiceAdminApi": {
+      "host": "127.0.0.1"
+  },
+}

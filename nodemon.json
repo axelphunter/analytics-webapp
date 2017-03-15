@@ -1,0 +1,8 @@
+{
+  "verbose": true,
+  "execMap": {
+    "js": "node --use-strict",
+    "jsx": "./node_modules/.bin/jsx \"$1\" | node"
+  },
+  "ignore": ["app/assets/*", "app/views/**/*.hbs"]
+}

@@ -1,0 +1,35 @@
+head
+  //- title #{metaData.title}
+
+  meta(charset="utf-8")
+  meta(http-equiv="X-UA-Compatible", content="IE=edge")
+  meta(name="viewport", content="width=device-width, initial-scale=1")
+  meta(name="author", content="#{metaData.company}")
+  meta(name="description", content="#{metaData.description}")
+
+  <!-- SOCIAL MEDIA META -->
+  meta(property="og:description", content="#{metaData.description}")
+  meta(property="og:image", content="#{metaData.socialImage}")
+  meta(property="og:site_name" content="#{metaData.title}")
+  meta(property="og:title" content="#{metaData.title}")
+  meta(property="og:type" content="website")
+  meta(property="og:url" content="#{metaData.website}")
+
+  <!-- TWITTER META -->
+  meta(name="twitter:card", content="summary")
+  meta(name="twitter:site", content="@bluebulldogstudio")
+  meta(name="twitter:creator", content="@bluebulldogstudio")
+  meta(name="twitter:title", content="#{metaData.title}")
+  meta(name="twitter:description", content="#{metaData.description}")
+  meta(name="twitter:image", content="#{metaData.website}")
+
+  <!-- FAVICON FILES -->
+  link(href="/images/ico/apple-touch-icon-144-precomposed.png", rel="apple-touch-icon-precomposed", sizes="144x144")
+  link(href="/images/ico/apple-touch-icon-114-precomposed.png", rel="apple-touch-icon-precomposed", sizes="114x114")
+  link(href="/images/ico/apple-touch-icon-72-precomposed.png", rel="apple-touch-icon-precomposed", sizes="72x72")
+  link(href="/images/ico/apple-touch-icon-57-precomposed.png", rel="apple-touch-icon-precomposed")
+  link(href="/images/ico/favicon.png", rel="shortcut icon")
+
+  meta(name="google-site-verification", content="")
+
+  include styles.pug

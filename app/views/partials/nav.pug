@@ -1,0 +1,73 @@
+nav.page-sidebar
+  div.sidebar-header
+    
+  div.sidebar-menu
+    ul
+      li.active
+        a.detailed(href="/home")
+          span.title Home
+          span.details 12 New Updates
+        span.icon-thumbnail
+          i.fa.fa-home(aria-hidden="true")
+      li.dropdown
+        a
+          span.title Users
+          span.arrow
+            i.fa.fa-chevron-down(aria-hidden="true")
+        span.icon-thumbnail
+          i.fa.fa-users(aria-hidden="true")
+        ul.sub-menu
+          li
+            a(href="/user/list") List
+            span.icon-thumbnail
+              i.fa.fa-list-ul(aria-hidden="true")
+          li
+            a(href="/user/create") Create
+            span.icon-thumbnail
+              i.fa.fa-plus(aria-hidden="true")
+      li.dropdown
+        a(href="javascript:;")
+          span.title Tenants
+          span.arrow
+            i.fa.fa-chevron-down(aria-hidden="true")
+        span.icon-thumbnail
+          i.fa.fa-user(aria-hidden="true")
+        ul.sub-menu
+          li
+            a(href="/tenant/list") List
+            span.icon-thumbnail
+              i.fa.fa-list-ul(aria-hidden="true")
+          li
+            a(href="/tenant/create") Create
+            span.icon-thumbnail
+              i.fa.fa-plus(aria-hidden="true")
+      li.dropdown
+        a(href="javascript:;")
+          span.title Sites
+          span.arrow
+            i.fa.fa-chevron-down(aria-hidden="true")
+        span.icon-thumbnail
+          i.fa.fa-map-marker(aria-hidden="true")
+        ul.sub-menu
+          li
+            a(href="/site/list") List
+            span.icon-thumbnail
+              i.fa.fa-list-ul(aria-hidden="true")
+          li
+            a(href="/site/create") Create
+            span.icon-thumbnail
+              i.fa.fa-plus(aria-hidden="true")
+      li.dropdown
+        a(href="javascript:;")
+          span.title IOT
+          span.arrow
+            i.fa.fa-chevron-down(aria-hidden="true")
+        span.icon-thumbnail
+          i.fa.fa-home(aria-hidden="true")
+        ul.sub-menu
+          li
+            a(href="/sensor/list") Sensors
+            span.icon-thumbnail 1
+          li
+            a(href="/sensor/gateways") Gateways
+            span.icon-thumbnail 2

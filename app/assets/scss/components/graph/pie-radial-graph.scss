@@ -1,0 +1,43 @@
+pie-radial-graph {
+  .wrapper {
+    display: table;
+    width: 100%;
+  }
+
+  .innercircle {
+    fill: #242731;
+  }
+
+  svg {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    margin: 20px auto;
+  }
+
+  .background {
+    fill: rgba(255,255,255,0.8);
+  }
+
+  .info-wrap {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: left;
+
+    h1 {
+      color: #fff;
+      font-size: 28px;
+      margin-bottom: 0;
+      letter-spacing: 0.2px;
+      font-weight: 200;
+    }
+
+    h2 {
+      font-size: 20px;
+      margin: 0;
+      color: #fff;
+      letter-spacing: 0.4px;
+      font-weight: 200;
+    }
+  }
+}

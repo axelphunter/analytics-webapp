@@ -1,0 +1,74 @@
+<a class="button button-primary" href="/user/create">Add new</a>
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>
+            Username
+          </th>
+          <th>
+            Name
+          </th>
+          <th>
+            Last Activity
+          </th>
+          <th>
+            Role
+          </th>
+          <th>
+            Status
+          </th>
+          <th>
+            Enabled
+          </th>
+          <th>
+            Online
+          </th>
+          <th class="buttons"></th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each users}}
+        <tr>
+          <td>
+            {{username}}
+          </td>
+          <td>
+            {{firstName}} {{lastName}}
+          </td>
+          <td>
+            {{format lastLogonUtc}}
+          </td>
+          <td>
+            {{role}}
+          </td>
+          <td>
+            {{#if hardLocked}}
+              <i class="fa fa-lock" aria-hidden="true"></i>
+            {{else if softLocked}}
+              <i class="fa fa-unlock-alt" aria-hidden="true"></i>
+            {{else}}
+              <i class="fa fa-unlock" aria-hidden="true"></i>
+            {{/if}}
+          </td>
+          <td>
+            {{#if enabled}}
+              <i class="fa fa-toggle-on" aria-hidden="true"></i>
+            {{else}}
+              <i class="fa fa-toggle-off" aria-hidden="true"></i>
+            {{/if}}
+          </td>
+          <td>
+            {{#if online}}
+
+            {{else}}
+            {{/if}}
+            online
+          </td>
+          <td>
+            <a class="button" href="/user/{{id}}/{{username}}">View</a>
+            <a class="button error" href="/user/delete/{{id}}/{{username}}">Delete</a>
+          </td>
+        </tr>
+        {{/each}}
+      </tbody>
+    </table>

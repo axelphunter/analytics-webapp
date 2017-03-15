@@ -1,0 +1,27 @@
+.grid-stack-item-content {
+  pie-logger {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow-y: scroll;
+    background: none;
+    padding: 0 10px;
+  }
+}
+
+pie-logger {
+  outline: none;
+  color: inherit;
+  font-family: Menlo, monospace;
+  font-size: 18px;
+  background-color: inherit;
+  text-align: left;
+
+  div {
+    flex: 1 0 auto;
+    white-space: nowrap;
+    font-size: inherit;
+  }
+}

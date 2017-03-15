@@ -1,0 +1,70 @@
+{
+  "_id": "587d00ebfcc674439894f753",
+  "default": true,
+  "uid": "756716f7-2e54-4715-9f00-91dcbea6cf60",
+  "layout": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 3,
+      "height": 2,
+      "component": {
+        "el": "pie-radial-graph"
+      }
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "width": 3,
+      "height": 2,
+      "component": {
+        "el": "pie-radial-graph"
+      }
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "width": 3,
+      "height": 2,
+      "component": {
+        "el": "pie-radial-graph"
+      }
+    },
+    {
+      "x": 9,
+      "y": 0,
+      "width": 3,
+      "height": 2,
+      "component": {
+        "el": "pie-radial-graph"
+      }
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "width": 5,
+      "height": 5,
+      "component": {
+        "el": "pie-map-graph"
+      }
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "width": 3,
+      "height": 5,
+      "component": {
+        "el": "pie-radar-graph"
+      }
+    },
+    {
+      "x": 8,
+      "y": 3,
+      "width": 4,
+      "height": 5,
+      "component": {
+        "el": "pie-globe-3d"
+      }
+    }
+  ]
+}

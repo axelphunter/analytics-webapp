@@ -1,0 +1,32 @@
+header.page-header
+  div.pull-left
+    div.inner
+      a(href="/home")
+        h1.logo.wow.fadeIn π
+          small Predictive Intelligence Engine
+      a.search-link(href="#", data-toggle="search")
+        i.fa.fa-search(aria-hidden="true")
+        span.bold Type anywhere to search
+  div.pull-right
+    div.inner
+      div.user
+        div.avatar
+        div.user-info
+          p.name Axel Hunter
+          p.level Administrator
+        span.arrow(data-toggle="profileDropdown")
+          i.fa.fa-chevron-down(aria-hidden="true")
+        ul.dropdown#profileDropdown
+          li
+            a(href="/user/edit/" + user.uid + "/" + user.username) Profile
+          li
+            a(href="/user/settings") Settings
+          li
+            a(href="/auth/logout").link Logout
+section.secondary-header
+  div.pull-left
+    div.inner
+      h2.title Dashboard
+  div.pull-right
+    div.inner
+      span.breadcrumbs Home / Dashboard
